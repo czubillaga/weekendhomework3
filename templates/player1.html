@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Player 1</h2>
+    <form action="/play" method="POST" id ="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><br>
+        <h3>Choice</h3>
+        <label for="rock" name="rock" id="rock">Rock</label>
+        <input type="radio" name="choice" id="rock" value="rock"><br>
+        <label for="paper" name="paper" id="paper">Paper</label>
+        <input type="radio" name="choice" id="paper" value="paper"><br>
+        <label for="scissors" name="scissors" id="scissors">Scissors</label>
+        <input type="radio" name="choice" id="scissors" value="scissors"><br>
+        <a><input id="submit" type="submit" value="Submit"></a>
+
+    </form>
+{% endblock content %}

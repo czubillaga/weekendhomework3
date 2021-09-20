@@ -5,7 +5,7 @@ from modules.player import Player
 class TestPlayer(unittest.TestCase):
 
     def setUp(self):
-        self.player = Player("Carlos", "Rock")
+        self.player = Player("Carlos", "rock")
 
     def test_player_has_name(self):
         self.assertEqual("Carlos", self.player.name)

@@ -1,3 +1,5 @@
+
+
 class Player:
 
     def __init__(self, name, choice):
@@ -5,10 +7,12 @@ class Player:
         self.choice = choice
 
     def __gt__(self, other):
-        if self.choice == "Rock" and other.choice == "Scissors":
+        if self.choice == "rock" and other.choice == "scissors":
             return True
-        elif self.choice == "Paper" and other.choice == "Rock":
+        elif self.choice == "paper" and other.choice == "rock":
             return True
-        elif self.choice == "Scissors" and other.choice == "Paper":
+        elif self.choice == "scissors" and other.choice == "paper":
             return True
         return False
+
+    
